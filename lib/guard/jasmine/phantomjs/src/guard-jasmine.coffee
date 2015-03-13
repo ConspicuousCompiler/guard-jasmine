@@ -3,7 +3,7 @@ system = require('system');
 # Set default values
 options =
   url: system.args[0] || 'http://localhost:3000/jasmine'
-  timeout: parseInt(system.args.args[1] || 10000)
+  timeout: parseInt(system.args[1] || 10000)
 
 # Create the web page.
 page = require('webpage').create()
